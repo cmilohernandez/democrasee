@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date: 2010-03-22
+  ynea: MyString
+
+two:
+  date: 2010-03-22
+  ynea: MyString
