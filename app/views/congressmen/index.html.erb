@@ -1,0 +1,32 @@
+<h1>Listing congressmen</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>District</th>
+    <th>Party</th>
+    <th>Email</th>
+    <th>Phone number</th>
+    <th>Twitter</th>
+    <th>Website</th>
+  </tr>
+
+<% @congressmen.each do |congressman| %>
+  <tr>
+    <td><%=h congressman.name %></td>
+    <td><%=h congressman.district %></td>
+    <td><%=h congressman.party %></td>
+    <td><%=h congressman.email %></td>
+    <td><%=h congressman.phone_number %></td>
+    <td><%=h congressman.twitter %></td>
+    <td><%=h congressman.website %></td>
+    <td><%= link_to 'Show', congressman %></td>
+    <td><%= link_to 'Edit', edit_congressman_path(congressman) %></td>
+    <td><%= link_to 'Destroy', congressman, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New congressman', new_congressman_path %>

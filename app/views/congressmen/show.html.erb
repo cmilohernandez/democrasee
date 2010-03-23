@@ -1,0 +1,38 @@
+<p>
+  <b>Name:</b>
+  <%=h @congressman.name %>
+</p>
+
+<p>
+  <b>District:</b>
+  <%=h @congressman.district %>
+</p>
+
+<p>
+  <b>Party:</b>
+  <%=h @congressman.party %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @congressman.email %>
+</p>
+
+<p>
+  <b>Phone number:</b>
+  <%=h @congressman.phone_number %>
+</p>
+
+<p>
+  <b>Twitter:</b>
+  <%=h @congressman.twitter %>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%=h @congressman.website %>
+</p>
+
+
+<%= link_to 'Edit', edit_congressman_path(@congressman) %> |
+<%= link_to 'Back', congressmen_path %>
