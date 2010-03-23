@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  content: MyText
+  sponsors: MyString
+  intro_date: 2010-03-22
+  status: MyString
+  abstract: MyText
+  bill_number: MyString
+
+two:
+  content: MyText
+  sponsors: MyString
+  intro_date: 2010-03-22
+  status: MyString
+  abstract: MyText
+  bill_number: MyString

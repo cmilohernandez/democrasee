@@ -8,11 +8,10 @@ class CreateCongressmen < ActiveRecord::Migration
       t.string :phone_number
       t.string :twitter
       t.string :website
-
       t.timestamps
     end
   end
-
+  
   def self.down
     drop_table :congressmen
   end

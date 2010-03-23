@@ -1,0 +1,33 @@
+<p>
+  <b>Content:</b>
+  <%=h @bill.content %>
+</p>
+
+<p>
+  <b>Sponsors:</b>
+  <%=h @bill.sponsors %>
+</p>
+
+<p>
+  <b>Intro date:</b>
+  <%=h @bill.intro_date %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%=h @bill.status %>
+</p>
+
+<p>
+  <b>Abstract:</b>
+  <%=h @bill.abstract %>
+</p>
+
+<p>
+  <b>Bill number:</b>
+  <%=h @bill.bill_number %>
+</p>
+
+
+<%= link_to 'Edit', edit_bill_path(@bill) %> |
+<%= link_to 'Back', bills_path %>
