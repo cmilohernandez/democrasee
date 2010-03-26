@@ -1,0 +1,13 @@
+<% form.inputs :name => "Account Information" do %>
+	<%= form.input :username %>
+  <%= form.input :email %>
+  <%= form.input :password %>
+  <%= form.input :password_confirmation, :label => "Confirm password" %>
+<% end %>
+
+<% form.inputs :name => "Optional Information" do %>
+	<%= form.input :dob %>
+	<%= form.input :male, :as => :radio, :collection => ["Male", "Female"], :label => "Gender" %>
+<% end %>
+
+

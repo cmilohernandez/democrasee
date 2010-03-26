@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  email: MyString
+  username: MyString
+  political_affiliation: MyString
+  male: false
+  dob: 2010-03-24
+
+two:
+  email: MyString
+  username: MyString
+  political_affiliation: MyString
+  male: false
+  dob: 2010-03-24

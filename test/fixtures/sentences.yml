@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  isRaw: false
+  parent_id: 1
+  text: MyText
+  user_id: 1
+  votes_up: 1
+  votes_down: 1
+  flag_votes: 1
+
+two:
+  isRaw: false
+  parent_id: 1
+  text: MyText
+  user_id: 1
+  votes_up: 1
+  votes_down: 1
+  flag_votes: 1
