@@ -1,0 +1,19 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+	<head> 
+		<title> DemocraSee - <%#= controller_name : action_name %> </title>
+	  <%= stylesheet_link_tag "styles", "formtastic", "formtastic_changes" %>
+	</head>
+
+	<body>
+		<div id="flash">
+		  <% flash.each do |key, value| -%>
+		    <div id="flash_<%= key %>"><%=h value %></div>
+		  <% end -%>
+		</div>
+		
+		<%= yield %>
+	</body>
+		
+
+</html>
