@@ -8,3 +8,31 @@ For example, to make the inline hint paragraphs a little darker in color than th
 form.formtastic fieldset ol li p.inline-hints { color:#333; }
 
 --------------------------------------------------------------------------------------------------*/
+
+input[type='text']{
+	font-size: 10px;
+}
+
+form.formtastic fieldset.inputs { 
+	width: 400px;
+	padding: 5px;
+	margin-top: 2em;
+	margin-left: 2em;
+	margin-right: 2em;
+	border: 1px dashed black;
+}
+
+form.formtastic input{
+	border: 1px solid black;
+	padding: 5px;
+}
+
+form.formtastic{
+	border: none;
+	background: inherit;
+}
+
+label{
+	text-align: right;
+	margin-right: 1px;
+}

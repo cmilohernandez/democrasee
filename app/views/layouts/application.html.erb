@@ -6,13 +6,31 @@
 	</head>
 
 	<body>
+		<a href="/"><img src="/images/logo2.png" style="border:none" /></a>
+		<div id="menu">
+			<a href="/">Home</a> |
+			<a href="">About</a> |
+			<a href="">FAQ</a> | 
+			Search <input id="search" />
+		</div>
 		<div id="flash">
 		  <% flash.each do |key, value| -%>
 		    <div id="flash_<%= key %>"><%=h value %></div>
 		  <% end -%>
 		</div>
 		
-		<%= yield %>
+		<div id="content">
+			<div id="left">
+				<%= yield %>
+			</div>
+		</div>
+		
+		<div id="footer">
+			<a href=""> Home </a>
+			(c) 2010 DemocraSee <br />
+			
+		</div>
+		
 	</body>
 		
 

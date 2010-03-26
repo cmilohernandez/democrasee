@@ -1,0 +1,9 @@
+<br />
+<% for bill in @bills %>
+	<div class="bill">
+		<h4><%= bill.bill_number %> | <%= bill.intro_date.strftime('%m-%Y')%></h4>
+		<p>
+			<%= link_to(bill.abstract[0..300] + "...", bill_path(bill.id)) %>
+		</p>
+	</div>
+<% end %>
