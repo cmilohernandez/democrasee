@@ -1,35 +1,8 @@
 <h1>New bill</h1>
 
-<% form_for(@bill) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :content %><br />
-    <%= f.text_area :content %>
-  </p>
-  <p>
-    <%= f.label :sponsors %><br />
-    <%= f.text_field :sponsors %>
-  </p>
-  <p>
-    <%= f.label :intro_date %><br />
-    <%= f.date_select :intro_date %>
-  </p>
-  <p>
-    <%= f.label :status %><br />
-    <%= f.text_field :status %>
-  </p>
-  <p>
-    <%= f.label :abstract %><br />
-    <%= f.text_area :abstract %>
-  </p>
-  <p>
-    <%= f.label :bill_number %><br />
-    <%= f.text_field :bill_number %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
+<% semantic_form_for(@bill) do |f| %>
+	<%= f.inputs %>
+  <%= f.buttons %>
 <% end %>
 
 <%= link_to 'Back', bills_path %>
